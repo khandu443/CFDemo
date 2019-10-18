@@ -1,5 +1,10 @@
 version: 0.2
 phases:
+  install:
+    runtime-versions:
+      java: corretto8
+      android: 29
+      ruby: "$MY_RUBY_VAR"
   build:
     commands:
       - echo Entered the build phase...
